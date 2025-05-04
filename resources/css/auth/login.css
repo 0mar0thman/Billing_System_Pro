@@ -1,0 +1,109 @@
+:root {
+    --primary-blue: #2c5fcc;
+    --primary-blue-light: #4a7de8;
+    --primary-blue-dark: #1a4ab3;
+    --secondary-blue: #e6f0ff;
+    --accent-blue: #8ab4ff;
+    --text-dark: #2d3748;
+    --text-light: #f8f9fa;
+    --bg-light: #f5f8ff;
+    --border-light: #e2e8f0;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.login {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-light);
+}
+
+.card-sigin {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(44, 95, 204, 0.1);
+    background-color: white;
+    padding: 2rem;
+}
+
+.main-signup-header h2 {
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+}
+
+.main-signup-header h5 {
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+}
+
+.form-group label {
+    color: var(--text-dark);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.form-control {
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-control:focus {
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 0.2rem rgba(44, 95, 204, 0.15);
+}
+
+.btn-main-primary {
+    background: linear-gradient(
+        135deg,
+        var(--primary-blue),
+        var(--primary-blue-light)
+    );
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem;
+    color: white;
+    font-weight: 500;
+    width: 100%;
+    margin-top: 1rem;
+    box-shadow: 0 2px 8px rgba(44, 95, 204, 0.2);
+    transition: all 0.3s;
+}
+
+.btn-main-primary:hover {
+    background: linear-gradient(
+        135deg,
+        var(--primary-blue-dark),
+        var(--primary-blue)
+    );
+    box-shadow: 0 4px 12px rgba(44, 95, 204, 0.3);
+    color: white;
+}
+
+.form-check-label {
+    color: var(--text-dark);
+}
+
+.form-check-input {
+    border: 1px solid var(--border-light);
+}
+
+.form-check-input:checked {
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+}
+
+.invalid-feedback {
+    color: #f5365c;
+    font-size: 0.875rem;
+}
+
+.is-invalid {
+    border-color: #f5365c;
+}
